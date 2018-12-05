@@ -18,7 +18,6 @@ public class MyThreat extends Thread {
         DbxRequestConfig config = DbxRequestConfig.newBuilder("dropbox/java-tutorial").build();
         client = new DbxClientV2(config, ACCESS_TOKEN);
     }
-
     public void run(){
         for (;;) { try {sleep(5000);} catch (Exception e){e.printStackTrace();}
 
